@@ -6,20 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tailwind</title>
     <link rel="stylesheet" href="./css/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header class="relative">
         <div class="container">
-            <nav class="flex justify-between items-center">
+            <nav class="flex justify-between items-center mt-[26px]">
                 <a href="#"><img src="./img/Logo.svg" alt="Logo"></a>
 
-                <ul class="flex items-center">
-                    <li><a href="#"></a>About</li>
-                    <li><a href="#"></a>Services</li>
-                    <li><a href="#"></a>Case Studies</li>
-                    <li><a href="#"></a>Careers</li>
-                    <li><a href="#"></a>Blog</li>
+                <ul class="flex gap-12 text-xl font-medium md:hidden">
+                    <li><a href="#" class="text-lightblack hover:text-Lightred lg:text-base">About</a></li>
+                    <li><a href="#" class="text-lightblack hover:text-Lightred lg:text-base">Services</a></li>
+                    <li><a href="#" class="text-lightblack hover:text-Lightred lg:text-base">Case Studies</a></li>
+                    <li><a href="#" class="text-lightblack hover:text-Lightred lg:text-base">Careers</a></li>
+                    <li><a href="#" class="text-lightblack hover:text-Lightred lg:text-base">Blog</a></li>
                 </ul>
+
+<!-- Burger button start -->
+
+                <button class="burger">
+                    <span class="burger-line top-line"></span>
+                    <span class="burger-line middle-line"></span>
+                    <span class="burger-line bottom-line"></span>
+                </button>
+
+               <ul id="menu" class=" absolute right-6 left-6 top-24 bg-Lightred flex flex-col items-center">
+                   <li><a href="#" class="py-4 block text-white">About</a></li>
+                   <li><a href="#" class="py-4 block text-white">Services</a></li>
+                   <li><a href="#" class="py-4 block text-white">Case Studies</a></li>
+                   <li><a href="#" class="py-4 block text-white">Careers</a></li>
+                   <li><a href="#" class="py-4 block text-white">Blog</a></li>
+               </ul>
+
+<!-- Burger button end -->
 
             </nav>
         </div>
