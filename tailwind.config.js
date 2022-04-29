@@ -6,6 +6,10 @@ module.exports = {
       'md': {'max':'786px'},
       'sm': {'max':'460px'},
     },
+    container: {
+      center: true,
+      padding: '20px',
+    },
     extend: {},
   },
   plugins: [],
