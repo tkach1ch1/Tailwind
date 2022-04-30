@@ -16,7 +16,12 @@ module.exports = {
         Lightred: '#FF0D38',
         darkred: '#D70026',
         Lightgray: '#747474',
-        darkgray: '# 272727',
+        darkgray: '#272727',
+        lightgrayCustome: '#595959',
+        grayCustome: "#454545"
+      },
+      boxShadow: {
+        'customered':'0px 0px 30px rgba(255, 13, 56, 0.21)'
       }
     },
   },

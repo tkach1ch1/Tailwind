@@ -2,63 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
-   font-family: 'Red Hat Display', sans-serif;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 @layer components {
-     .container {
-        @apply max-w-[1080px]
-    }
+  .container {
+    @apply max-w-[1080px];
+  }
 }
 
 /* Burger menu start */
 
 .burger {
-   position: relative;
-   width: 30px;
-   height: 20px;
+  position: relative;
+  width: 30px;
+  height: 20px;
 }
 
 .burger-line {
+  display: flex;
   width: 30px;
   height: 2px;
-  background: #D70026;
-  display: flex;
-  transition: 3s all ease-out; 
+  background: #d70026;
+  transition: 0.3s all ease-out;
 }
 
 .top-line {
-   position: absolute;
-   top: 0;
-   left: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .middle-line {
-   position: absolute;
-   top: 50%;
-   left: 0;
-   transform: translate(0, -50%);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
 }
 
 .bottom-line {
-   bottom: 0;
-   left: 0;
-   position: absolute;
-
+  bottom: 0;
+  left: 0;
+  position: absolute;
 }
 
 .burger.active > .top-line {
-   transform: translate(8px) rotate(45deg);
-   transition: .3s all easy;
-
+  transform: translateY(8px) rotate(45deg);
+  transition: 0.3s all ease;
 }
 
-.burger.active > .mid-line {
+.burger.active > .middle-line {
   opacity: 0;
-   transition: .3s all easy;
-   
+  transition: 0.2s all ease;
+}
+
+.burger.active > .bottom-line {
+  transform: translateY(-10px) rotate(-45deg);
+  transition: 0.3s all ease;
 }
 
 /* Burger menu end */
